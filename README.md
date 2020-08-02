@@ -46,6 +46,19 @@ Example: in `/etc/udev/rules.d` create a file ending in .rules, such as `33-rece
     SUBSYSTEM=="usb", ATTR{idVendor}=="0416", ATTR{idProduct}=="5011", MODE="666"
 ```
 
+# MAC OSX
+Tested with MacOS Catalina and a *POS5890K* printer.
+
+1. Install libsub, simply:
+```
+brew install libusb
+```
+
+2. Run the script
+```
+python usb_receipt_printer_demo.py
+```
+
 # Python setup
 
 This code is mainly from the example code at [https://github.com/pyusb/pyusb](https://github.com/pyusb/pyusb)
